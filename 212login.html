@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        let userName = prompt("введите логин", '');
+        if (userName === 'admin') {        
+          let pass = prompt('enter password', '');        
+          if (pass === 'password') {
+            alert( 'Здравствуйте!' );
+          } else if (pass === '' || pass === null) {
+            alert( 'доступ запрещен' );
+          } else {
+            alert( 'неверный пароль' );
+          }
+        } else if (userName === '' || userName === null) {
+          alert( 'отменено' );
+        } else {
+          alert( "пользователь не найден" );
+        }
+        </script>
+</body>
+</html>
